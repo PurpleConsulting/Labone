@@ -1,13 +1,10 @@
 package fr.labone.jsp;
 
-import javax.ejb.LocalBean;
-import javax.ejb.Stateless;
 
 /**
  * Session Bean implementation class Person
  */
-@Stateless
-@LocalBean
+
 public class Person {
 
     /**
