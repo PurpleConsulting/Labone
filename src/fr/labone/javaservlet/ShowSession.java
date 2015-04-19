@@ -2,7 +2,6 @@ package fr.labone.javaservlet;
 
 
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,7 +13,6 @@ import javax.servlet.http.HttpSession;
 import org.joda.time.*;
 import org.joda.time.format.DateTimeFormat;
 
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
 
 /**
  * Servlet implementation class ShowSession
@@ -60,7 +58,8 @@ public class ShowSession extends HttpServlet {
 		date = date +"/2015";
 		
 		DateTime t1 = new DateTime();
-		DateTime now = new DateTime().now();
+		new DateTime();
+		DateTime now = DateTime.now();
 		
 		try	{
 			t1 = DateTime.parse(date, DateTimeFormat.forPattern("dd/MM/yyyy"));
